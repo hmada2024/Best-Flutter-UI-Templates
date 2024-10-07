@@ -3,7 +3,6 @@ import 'package:best_flutter_ui_templates/fitness_app/models/meals_list_data.dar
 import 'package:best_flutter_ui_templates/main.dart';
 import 'package:flutter/material.dart';
 
-import '../../main.dart';
 
 class MealsListView extends StatefulWidget {
   const MealsListView(
@@ -115,7 +114,7 @@ class MealsView extends StatelessWidget {
                         boxShadow: <BoxShadow>[
                           BoxShadow(
                               color: HexColor(mealsListData!.endColor)
-                                  .withOpacity(0.6),
+                                  .withValues(alpha: 0.6),
                               offset: const Offset(1.1, 4.0),
                               blurRadius: 8.0),
                         ],
@@ -214,7 +213,7 @@ class MealsView extends StatelessWidget {
                                       boxShadow: <BoxShadow>[
                                         BoxShadow(
                                             color: FitnessAppTheme.nearlyBlack
-                                                .withOpacity(0.4),
+                                                .withValues(alpha: 0.4),
                                             offset: Offset(8.0, 8.0),
                                             blurRadius: 8.0),
                                       ],
@@ -240,7 +239,7 @@ class MealsView extends StatelessWidget {
                       width: 84,
                       height: 84,
                       decoration: BoxDecoration(
-                        color: FitnessAppTheme.nearlyWhite.withOpacity(0.2),
+                        color: FitnessAppTheme.nearlyWhite.withValues(alpha: 0.2),
                         shape: BoxShape.circle,
                       ),
                     ),
